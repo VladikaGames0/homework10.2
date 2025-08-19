@@ -19,7 +19,8 @@ def get_mask_account(card_number: Union[str, int]) -> str:
         return f"{card_name} {formatted_number}"
 
 
-
-
-
-
+def get_date(date_str: str) -> str:
+    """Переводит один формат даты в другой"""
+    date_part = date_str.split("T")[0]
+    year, month, day = date_part.split("-")
+    return f"{day}.{month}.{year}"
