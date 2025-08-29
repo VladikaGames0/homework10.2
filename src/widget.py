@@ -1,7 +1,7 @@
 from typing import Union
 
 
-def get_mask_account(card_number: Union[str, int]) -> str:
+def mask_account_card(card_number: Union[str, int]) -> str:
     """Принимает значение карты и возвращает название с замаскированным номером"""
 
     s = str(card_number)
