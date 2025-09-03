@@ -1,5 +1,5 @@
+import pytest
 from typing import Union
-
 
 def mask_account_card(card_number: Union[str, int]) -> str:
     """Принимает значение карты и возвращает название с замаскированным номером"""
